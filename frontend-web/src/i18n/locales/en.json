@@ -1,0 +1,44 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "logout": "Logout",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "phone": "Phone Number",
+    "fullName": "Full Name",
+    "forgotPassword": "Forgot Password?",
+    "verifyOTP": "Verify OTP",
+    "resendOTP": "Resend OTP"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "appointments": "Appointments",
+    "patients": "Patients",
+    "prescriptions": "Prescriptions",
+    "profile": "Profile"
+  },
+  "doctor": {
+    "specialty": "Specialty",
+    "experience": "Years of Experience",
+    "consultationFee": "Consultation Fee",
+    "schedule": "Schedule",
+    "certificates": "Certificates"
+  },
+  "patient": {
+    "medicalHistory": "Medical History",
+    "bloodType": "Blood Type",
+    "allergies": "Allergies",
+    "emergencyContact": "Emergency Contact"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "common": {
+    "welcome": "مرحباً",
+    "logout": "تسجيل خروج",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "success": "نجاح"
+  },
+  "auth": {
+    "login": "تسجيل دخول",
+    "register": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "phone": "رقم الهاتف",
+    "fullName": "الاسم الكامل",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "verifyOTP": "التحقق من الرمز",
+    "resendOTP": "إعادة إرسال الرمز"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "appointments": "المواعيد",
+    "patients": "المرضى",
+    "prescriptions": "الوصفات الطبية",
+    "profile": "الملف الشخصي"
+  },
+  "doctor": {
+    "specialty": "التخصص",
+    "experience": "سنوات الخبرة",
+    "consultationFee": "رسوم الاستشارة",
+    "schedule": "الجدول",
+    "certificates": "الشهادات"
+  },
+  "patient": {
+    "medicalHistory": "التاريخ الطبي",
+    "bloodType": "فصيلة الدم",
+    "allergies": "الحساسية",
+    "emergencyContact": "جهة اتصال الطوارئ"
+  }
+}

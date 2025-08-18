@@ -1,0 +1,35 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pids
+.npm
+.eslintcache
+.node_repl_history
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# IDE and OS specific files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Optional: if using a specific framework or tool
+# For example, for Next.js:
+.next/
