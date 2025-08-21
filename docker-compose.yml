@@ -6,10 +6,10 @@ services:
     container_name: domecare_mongodb
     restart: always
     ports:
-      - "27017:27017"
+      - "27007:27017"
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=domecare_admin_2024
+      - MONGO_INITDB_ROOT_PASSWORD=admin
       - MONGO_INITDB_DATABASE=domecare_dev
     volumes:
       - ./mongodb_data:/data/db
@@ -26,7 +26,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - MONGODB_URL=mongodb://admin:domecare_admin_2024@mongodb:27017/domecare_dev?authSource=admin
+      - MONGODB_URL=mongodb://admin:admin@mongodb:27007/domecare_dev?authSource=admin
       - ENV=development
     volumes:
       - ./backend:/app

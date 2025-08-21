@@ -9,6 +9,9 @@ from app.core.database import db
 from app.api.v1.endpoints.api import api_router
 from app.core.exceptions import setup_exception_handlers
 from app.services.auth_service import auth_service
+from app.services.appointment_service import appointment_service
+from app.services.doctor_service import doctor_service
+from app.services.prescription_service import prescription_service
 
 # Configure logging
 logging.basicConfig(
@@ -26,7 +29,12 @@ async def lifespan(app: FastAPI) -> AsyncGenerator:
     await db.connect()
     logger.info("Connected to MongoDB")
 
+    # Initialize services
     await auth_service.init()
+    await appointment_service.init()
+    await doctor_service.init()
+    await prescription_service.init()
+    logger.info("Services initialized")
     
     # Show feature flags status
     logger.info(f"Feature Flags Status:")
@@ -75,7 +83,10 @@ async def root():
         "features": {
             "phone_verification": settings.PHONE_VERIFICATION_ENABLED,
             "mock_mode": settings.USE_MOCK_SERVICES,
-            "email_auth": settings.ALLOW_EMAIL_AUTH
+            "email_auth": settings.ALLOW_EMAIL_AUTH,
+            "appointment_booking": True,
+            "prescription_management": True,
+            "doctor_search": True
         }
     }
 
@@ -85,5 +96,10 @@ async def health_check():
     return {
         "status": "healthy",
         "database": await db.health_check(),
-        "environment": settings.ENV
+        "environment": settings.ENV,
+        "services": {
+            "appointments": "active",
+            "prescriptions": "active", 
+            "doctor_search": "active"
+        }
     }

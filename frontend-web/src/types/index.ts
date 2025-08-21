@@ -111,17 +111,7 @@ export interface EmergencyContact {
   phone_number: string
 }
 
-export interface Appointment {
-  id: string
-  doctor_id: string
-  patient_id: string
-  appointment_date: string
-  time_slot: TimeSlot
-  status: AppointmentStatus
-  reason?: string
-  notes?: string
-  created_at: string
-}
+
 
 export interface Prescription {
   id: string
